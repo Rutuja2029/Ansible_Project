@@ -1,0 +1,29 @@
+1. Create Base Playbook Structure
+Create a base Ansible Playbook file structure to start writing new tasks.
+
+2. Create Application Configuration Directory
+Create a new base application directory where all the application files and binaries will be stored.
+
+3. Gathering System Facts
+Gather the name of facts that collects the host system's information related to the Operating System Family and the Kernel Version.
+
+4. Create System Information File for Application
+Create a new file in the base application directory depending on the Operating System Family of the underlying host.
+
+5. Adding kernel Information to System File
+Store the Kernel Information of the Host to the Application's Systems File.
+
+6. Fetch Application Code from Repository
+Fetch the application code from the remote URL and store it inside the base application config directory.
+
+7. Compile the Application
+Compile the Application from the Application Code.
+
+8. Run the Application and Document the Status
+Run the application binary and Register the Output of the Application.
+
+9. Store the application status output to file
+Store the Output of Application Binary to the File.
+
+10. Run Ansible Playbook
+Run the Ansible Playbook to Create the Application Environment.
