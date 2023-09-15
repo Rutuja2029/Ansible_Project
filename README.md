@@ -1,1 +1,5 @@
-# Ansible_playbook_project
+# Ansible_Project
+As a consultant at an E-Commerce based startup. I was asked to find a solution to automate the task related to setting up the environment required for the application to run. Currently the team is manually provisioning the environment whenever a new server is launched and this has slowed down the overall deployment process. The architecture group thinks that automating the tasks using Ansible will lead to faster provisioning. Task is to build a proof-of-concept.
+
+#Jira Task:
+The Engineering team has raised an issue. Whenever a new server is launched, the developers have to manually log in to the server and configure the application environment and deploy the application. This approach is a time-consuming task for the developers and also the overall software release cycle. They would like the entire application environment to be set up on a Linux server automatically with a single command. I want you to create an Ansible Playbook that can create the entire application environment for developers.
