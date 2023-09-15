@@ -1,0 +1,9 @@
+As a Technical Support Engineer at Ansible Corp. 
+You have received a new support case from an Enterprise client. 
+The DevOps team has been writing multiple playbook files for different sets of 
+configurations and they run the playbooks one by one individually to configure 
+the entire system. During the architecture review by the Ansible team, 
+it has been recommended to use Ansible roles as a best practice. 
+Since the customer is an Enterprise client, 
+boss has assigned you the task of analyzing the customer playbook files 
+and refactoring them to Ansible roles.

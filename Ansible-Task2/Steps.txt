@@ -1,0 +1,20 @@
+1. Analyze the Customer's Ansible Playbook
+Before migrating the customer's playbook to the Ansible role, analyze the playbook to see what the type of tasks that are defined are.
+
+2. Run the Customer's Ansible Playbook for Verification
+Before refactoring the Playbook files to Ansible roles, verify that the playbook runs successfully.
+
+3. Create the Ansible Role Structure
+Based on the tasks defined in the customer's Ansible Playbooks, create an appropriate base structure for the Ansible role.
+
+4. Migrate Base-App Playbook to Ansible Role
+Migrate the tasks that are defined in the "base-app.yaml" file to the Ansible Role structure.
+
+5. Migrate Deploy-App Playbook to Ansible Role
+Migrate the tasks that are defined in the "deploy-app.yaml" file  to the Ansible Role structure.
+
+6. Create the main.yaml file for the entire Ansible Role
+Create a central main.yaml file that can run both of the Ansible roles sequentially.
+
+7. Test the Ansible Role Setup
+Test the Entire Ansible Role setup to see if all the Ansible role runs successfully.
