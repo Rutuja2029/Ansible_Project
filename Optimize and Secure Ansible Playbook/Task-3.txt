@@ -1,0 +1,5 @@
+Technical Support Engineer at Ansible Corp. 
+A member from a SysOps Team who is working with one of your Enterprise customers is facing an issue.
+The Ansible code that he has written is reported to have security and optimization issues. 
+Being an Enterprise customer, your boss has assigned you the task of analyzing the customer code 
+and optimizing and Securing it using Ansible best practices.

@@ -1,0 +1,44 @@
+Important commands to know:
+
+
+ansible localhost -m ansible.builtin.setup | grep -i "Ubuntu"
+
+ansible-vault encrypt db-credentials.txt
+
+ansible-playbook solution.yaml --ask-vault-pass
+
+
+Modules:
+
+# to create directory
+ansible.builtin.file:
+  path
+  state: directory
+
+# to create file
+ansible.builtin.file:
+  src:
+  state: touch
+
+# to create multiple file using loop
+ansible.builtin.file:
+  src: /path/{{ item }}
+  state: touch
+with_items:
+  - item1
+  - item2
+  - item3
+when: var == "Name"
+
+# to copy file
+ansible.builtin.copy:
+  src:
+  dest:
+
+# to  copy template
+ansible.builtin.template:
+  src:
+  dest:
+
+
+

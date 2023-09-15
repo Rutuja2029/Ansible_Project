@@ -1,0 +1,37 @@
+---
+- hosts: localhost
+  vars:
+    "heading": "Application Landing Page"
+  tasks:
+    - name: Task 1 - Create a new directory
+      ansible.builtin.file:
+        path: /home/labsuser/code/ansible-dir
+        state: directory
+
+    - name: Task 2 - Create Text File 1-2-3
+      ansible.builtin.file:
+        path: /home/labsuser/code/ansible-dir/{{ item }}
+        state: touch
+      with_items:
+        - app.txt
+        - db.txt
+        - app-config.txt
+
+    - name: Task 5 - Copying the Credentials File
+      ansible.builtin.copy:
+        src: db-credentials.txt
+        dest: /home/labsuser/code/ansible-dir
+
+    - name: Task 6 - create file if underlying Host is Ubuntu
+      ansible.builtin.file:
+        path: /home/labsuser/code/ansible-dir/ubuntu.txt
+        state: touch
+      when: ansible_distribution == "Ubuntu"
+
+    - name: Task 8 - Copy the Landing Page to Destination
+      ansible.builtin.template:
+        src: landing-page.j2
+        dest: /home/labsuser/code/ansible-dir/landing-page.html
+
+
+
